@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel</title>
+  <!-- Icono de pestaña -->
+  <link rel="shortcut icon" href="assets/IMG/marvel.png" type="image/png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Sacramento" rel="stylesheet">
+  <!-- Materialize Css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+
+    <!-- section Api -->
+    <section id="contenido">
+      <nav class="red darken-1">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">
+            <img class="logo logo-nav" src="assets/IMG/marvel.png" alt="Marvel">
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="#">Sign Out</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col m10">
+          <input id="inputSearch" type="text" name="" value="">
+        </div>
+          <div class="col m2">
+            <button id="btnSearch" onclick="getMarvelResponse()" class="waves-effect waves-light btn grey darken-4 white-text"type="button" name="button">Buscar</button>
+        </div>
+      </div>
+      <div class="row">
+
+      </div>
+    </section>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCbfOPEU_ZN_eOdXQ5_GgjIqhSbWCd_4UY",
+      authDomain: "marvel-29d81.firebaseapp.com",
+      databaseURL: "https://marvel-29d81.firebaseio.com",
+      projectId: "marvel-29d81",
+      storageBucket: "marvel-29d81.appspot.com",
+      messagingSenderId: "838315840167"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!-- Icons Font Awesome -->
+  <script src="https://use.fontawesome.com/f1462b63cd.js"></script>
+  <!-- JQuery  -->
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <!-- Compiled and minified JavaScript Materialize-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="assets/JS/app.js"></script>
+<script src="assets/JS/firebase.js"></script>
+  <script src="assets/JS/appModal.js"></script>
+
+</body>
+
+</html>
